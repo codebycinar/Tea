@@ -1,6 +1,6 @@
 {
   "name": "cinar-tea",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Its a package for tea protocol Oss project",
   "main": "index.js",
   "scripts": {
