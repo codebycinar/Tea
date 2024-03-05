@@ -29,6 +29,7 @@ app.get('/getBlockNumber', async (req, res) => {
         const blockNumber = await web3.eth.getBlockNumber();
         res.json({ blockNumber: blockNumber.toString() }); // BigInt değerini string'e çevir
     } catch (error) {
+        //TODO: hata loglanacak
         res.status(500).json({ error: error.message });
     }
 });
@@ -36,3 +37,4 @@ app.get('/getBlockNumber', async (req, res) => {
 app.listen(port, () => {
     console.log(`Sunucu ${port} portunda çalışıyor.`);
 });
+
